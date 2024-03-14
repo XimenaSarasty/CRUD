@@ -12,12 +12,12 @@ router.get('/products', productController.getAllProducts);
 router.get('/product/:id', productController.getProductById);
 
 //Ruta para crear un nuevo producto
-router.post('/newproduct', productController.createNewProduct);
+router.post('/products', productController.createNewProduct);
 
 //Ruta para actualizar un producto producto existente
-router.put('/editproduct/:id', productController.updateProduct);
+router.put('/products/:id', productController.updateProduct);
 
 //Ruta para eliminar un producto existente
-router.delete('/delproduct/:id', productController.deleteProduct);
+router.delete('/products/:id', productController.deleteProduct);
 
 export default router;
